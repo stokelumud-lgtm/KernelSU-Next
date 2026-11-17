@@ -8,7 +8,9 @@ jobs:
   build-lkm:
     uses: ./.github/workflows/build-lkm.yml
     secrets: inherit
-
+    with:
+      expected_manager_size: '0x3e4'
+      expected_manager_hash: '612aee3d240ceb3e035332332232a514b3d2679717c2365bfee802b11bef34ef'
   build-ksuinit:
     uses: ./.github/workflows/ksuinit.yml
 
